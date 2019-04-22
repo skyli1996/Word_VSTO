@@ -1,0 +1,11 @@
+
+使用时先将mdf和ldf文件导入SQL Server数据库中，我使用的是SQL Server2008
+代码中关于数据库的连接代码块在"sqlDao"类，如下所示
+
+        ////连接数据库的步骤：
+        ////1.创建连接字符串
+        ////Data Source=服务器名;
+        ////Initial Catalog=数据库名;
+        ////Integrated Security=True;声明验证方式
+        ////用户名、密码方式
+        static string MySqlCon = "Data Source=DESKTOP-0MKMHN0\\SQLEXPRESS;Initial Catalog=Sky;Integrated Security=True";
