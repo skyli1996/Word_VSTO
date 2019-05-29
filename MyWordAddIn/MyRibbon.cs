@@ -572,7 +572,6 @@ namespace MyWordAddIn
                 Globals.ThisAddIn._MyCustomTaskPane.Visible = true;
             }
         }
-
         #endregion
     }
 }

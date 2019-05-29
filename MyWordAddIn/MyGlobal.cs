@@ -19,10 +19,10 @@ namespace MyWordAddIn
         {
             QuestionList = null;
             SqlDao s1 = new SqlDao();            
-            SingleSelection = s1.ExecuteQuery(SqlAndPath.SqlForSingleSelection);
-            MultipleSelection = s1.ExecuteQuery(SqlAndPath.SqlForMultipleSelection);
-            ExperimentTest = s1.ExecuteQuery(SqlAndPath.SqlForExperimentTest);
-            CalculateTest = s1.ExecuteQuery(SqlAndPath.SqlForCalculateTest);
+            //SingleSelection = s1.ExecuteQuery(SqlAndPath.SqlForSingleSelection);
+            //MultipleSelection = s1.ExecuteQuery(SqlAndPath.SqlForMultipleSelection);
+            //ExperimentTest = s1.ExecuteQuery(SqlAndPath.SqlForExperimentTest);
+            //CalculateTest = s1.ExecuteQuery(SqlAndPath.SqlForCalculateTest);
         }
     }
 }

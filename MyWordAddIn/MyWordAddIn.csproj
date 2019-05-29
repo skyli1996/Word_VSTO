@@ -159,6 +159,21 @@
       <DependentUpon>AddTestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FileHelper.cs" />
+    <Compile Include="LineAnswerHelper\LineLeftAnswer.cs" />
+    <Compile Include="LineAnswerHelper\LineQuestion.cs" />
+    <Compile Include="LineAnswerHelper\LineRightAnswer.cs" />
+    <Compile Include="LineAnswerHelper\LineSelectAnswerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LineAnswerHelper\LineSelectAnswerForm.Designer.cs">
+      <DependentUpon>LineSelectAnswerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LineAnswerHelper\PanelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LineAnswerHelper\PanelExLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MyGlobal.cs" />
     <Compile Include="MyRibbon.cs">
       <SubType>Component</SubType>
@@ -168,6 +183,11 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Question.cs" />
     <Compile Include="SqlAndPath.cs" />
@@ -187,19 +207,17 @@
     <EmbeddedResource Include="AddTestForm.resx">
       <DependentUpon>AddTestForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LineAnswerHelper\LineSelectAnswerForm.resx">
+      <DependentUpon>LineSelectAnswerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyRibbon.resx">
       <DependentUpon>MyRibbon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UCForRichText.resx">
       <DependentUpon>UCForRichText.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,19 +245,19 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="close.png" />
+    <None Include="Images\close.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="open.png" />
+    <None Include="Images\open.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Book.png" />
+    <None Include="Images\Book.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="BookHouse.png" />
+    <None Include="Images\BookHouse.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SetaddHouse.png" />
+    <None Include="Images\SetaddHouse.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
